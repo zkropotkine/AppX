@@ -15,6 +15,11 @@
 		DA3153331C2B29B500BFE159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3153311C2B29B500BFE159 /* LaunchScreen.storyboard */; };
 		DA31533E1C2B29B500BFE159 /* ProjectXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA31533D1C2B29B500BFE159 /* ProjectXTests.m */; };
 		DA3153491C2B29B500BFE159 /* ProjectXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3153481C2B29B500BFE159 /* ProjectXUITests.m */; };
+		DA3153571C2B3D3C00BFE159 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3153561C2B3D3C00BFE159 /* SystemConfiguration.framework */; };
+		DA3153591C2B3D4600BFE159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3153581C2B3D4600BFE159 /* UIKit.framework */; };
+		DA31535B1C2B3D4F00BFE159 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA31535A1C2B3D4F00BFE159 /* CoreGraphics.framework */; };
+		DA31535D1C2B3DDA00BFE159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA31535C1C2B3DDA00BFE159 /* Foundation.framework */; };
+		DA3153661C2B423F00BFE159 /* CodeReaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3153651C2B423F00BFE159 /* CodeReaderVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,12 @@
 		DA3153441C2B29B500BFE159 /* ProjectXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3153481C2B29B500BFE159 /* ProjectXUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectXUITests.m; sourceTree = "<group>"; };
 		DA31534A1C2B29B500BFE159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA3153561C2B3D3C00BFE159 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DA3153581C2B3D4600BFE159 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA31535A1C2B3D4F00BFE159 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA31535C1C2B3DDA00BFE159 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA3153641C2B423F00BFE159 /* CodeReaderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeReaderVC.h; sourceTree = "<group>"; };
+		DA3153651C2B423F00BFE159 /* CodeReaderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeReaderVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA31535D1C2B3DDA00BFE159 /* Foundation.framework in Frameworks */,
+				DA31535B1C2B3D4F00BFE159 /* CoreGraphics.framework in Frameworks */,
+				DA3153591C2B3D4600BFE159 /* UIKit.framework in Frameworks */,
+				DA3153571C2B3D3C00BFE159 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +99,7 @@
 				DA3153221C2B29B500BFE159 /* ProjectX */,
 				DA31533C1C2B29B500BFE159 /* ProjectXTests */,
 				DA3153471C2B29B500BFE159 /* ProjectXUITests */,
+				DA31535E1C2B3FBA00BFE159 /* Framework */,
 				DA3153211C2B29B500BFE159 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +117,7 @@
 		DA3153221C2B29B500BFE159 /* ProjectX */ = {
 			isa = PBXGroup;
 			children = (
+				DA3153621C2B400C00BFE159 /* ViewControllers */,
 				DA3153261C2B29B500BFE159 /* AppDelegate.h */,
 				DA3153271C2B29B500BFE159 /* AppDelegate.m */,
 				DA3153291C2B29B500BFE159 /* ViewController.h */,
@@ -138,6 +155,26 @@
 				DA31534A1C2B29B500BFE159 /* Info.plist */,
 			);
 			path = ProjectXUITests;
+			sourceTree = "<group>";
+		};
+		DA31535E1C2B3FBA00BFE159 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DA31535C1C2B3DDA00BFE159 /* Foundation.framework */,
+				DA31535A1C2B3D4F00BFE159 /* CoreGraphics.framework */,
+				DA3153581C2B3D4600BFE159 /* UIKit.framework */,
+				DA3153561C2B3D3C00BFE159 /* SystemConfiguration.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		DA3153621C2B400C00BFE159 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA3153641C2B423F00BFE159 /* CodeReaderVC.h */,
+				DA3153651C2B423F00BFE159 /* CodeReaderVC.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +244,7 @@
 				TargetAttributes = {
 					DA31531F1C2B29B500BFE159 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = YEG548UG49;
 					};
 					DA3153381C2B29B500BFE159 = {
 						CreatedOnToolsVersion = 7.2;
@@ -270,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3153661C2B423F00BFE159 /* CodeReaderVC.m in Sources */,
 				DA31532B1C2B29B500BFE159 /* ViewController.m in Sources */,
 				DA3153281C2B29B500BFE159 /* AppDelegate.m in Sources */,
 				DA3153251C2B29B500BFE159 /* main.m in Sources */,
@@ -411,7 +450,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ProjectX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cordyceps.ProjectX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +463,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ProjectX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cordyceps.ProjectX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
